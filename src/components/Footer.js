@@ -18,11 +18,7 @@ const Footer = () => {
           </p>
         </div>
         <nav className="footer-nav" aria-label="Footer Navigation">
-          <a href="/" title="Home - Infodra Technologies Digital Solutions">Home</a>
-          <a href="/services" title="Technology Services & Solutions">Services</a>
-          <a href="/about" title="About Infodra Technologies">About Us</a>
-          <a href="/digital-solutions" title="Digital Transformation Solutions">Digital Solutions</a>
-          <a href="/contact" title="Contact Us for IT Consulting">Contact Us</a>
+          <a href="https://www.infodratechnologies.com" title="Home - Infodra Technologies Digital Solutions">Home</a>
         </nav>
         <div className="footer-info">
           <p>&copy; 2025 Infodra Technologies Private Limited. All rights reserved.</p>
