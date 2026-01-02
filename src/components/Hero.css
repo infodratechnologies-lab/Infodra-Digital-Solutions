@@ -78,6 +78,26 @@
   animation: rotate-icon 3s infinite ease-in-out;
 }
 
+.colorful-text {
+  background: linear-gradient(90deg, #ff6b6b, #feca57, #48dbfb, #ff9ff3, #54a0ff, #00d2d3);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-flow 3s linear infinite;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
 .hero-title {
   font-size: 3.5rem;
   font-weight: 700;

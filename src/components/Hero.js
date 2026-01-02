@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="hero-container">
         <div className="hero-badge animate-fade-in">
           <FaRocket className="badge-icon" />
-          <span>Innovative Digital Solutions</span>
+          <span className="colorful-text">Infodra Technologies</span>
         </div>
         <h1 className="hero-title animate-slide-up">Digital Solutions & Transformation Services</h1>
         <h2 className="hero-subtitle animate-slide-up delay-1">Transforming Businesses with Cutting-Edge Technology & Innovation</h2>
