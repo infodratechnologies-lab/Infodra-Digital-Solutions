@@ -1,0 +1,13 @@
+.App {
+  min-height: 100vh;
+}
+
+/* Global animations for smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add some global transitions */
+* {
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
