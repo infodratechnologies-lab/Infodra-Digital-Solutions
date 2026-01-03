@@ -24,7 +24,7 @@ const Footer = () => {
           <p>&copy; 2025 Infodra Technologies Private Limited. All rights reserved.</p>
           <p className="footer-description">
             Leading provider of digital transformation services, custom software development, and enterprise technology solutions 
-            serving startups, SMEs, and Fortune 500 companies worldwide.
+            serving startups, SMEs, and Enterprise Worldwide.
           </p>
         </div>
       </div>

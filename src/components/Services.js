@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaCode, FaCogs, FaRobot, FaCloud, FaHeadset } from 'react-icons/fa';
 import './Services.css';
+import PricingModal from './PricingModal';
 
 const Services = () => {
+  const [isPricingModalOpen, setIsPricingModalOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState('');
+
+  const handlePricingClick = (serviceTitle) => {
+    setSelectedService(serviceTitle);
+    setIsPricingModalOpen(true);
+  };
+
   const services = [
     {
       id: 1,
@@ -90,11 +99,24 @@ const Services = () => {
                   </li>
                 ))}
               </ul>
-              <div className="service-badge">Enterprise-Grade Service</div>
+              <div 
+                className="service-badge" 
+                onClick={() => handlePricingClick(service.title)}
+                style={{ cursor: 'pointer' }}
+                title="Click to calculate investment & ROI"
+              >
+                Enterprise-Grade Service
+              </div>
             </div>
           </div>
         ))}
       </div>
+
+      <PricingModal 
+        isOpen={isPricingModalOpen}
+        onClose={() => setIsPricingModalOpen(false)}
+        serviceTitle={selectedService}
+      />
     </section>
   );
 };
